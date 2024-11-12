@@ -1,38 +1,64 @@
-.wrapper {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.error {
-  color: red;
-  font-size: 12px;
-}
 .form {
+  margin-top: 25px;
+  border: solid 2px black;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 8px 8px lightblue;
-  padding: 20px;
-  gap: 10px;
-  & button {
-    background-color: teal;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 2px 2px 4px 4px lightgray;
-  }
+  padding: 15px;
+  width: 215px;
+  gap: 15px;
+  border-radius: 5px;
 }
-.label {
-  gap: 5px;
+
+.labelWrapper {
   display: flex;
   flex-direction: column;
-  & span {
-    font-weight: bold;
-  }
+  gap: 5px;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.33;
+  letter-spacing: 0.01em;
+  color: black;
 }
 .input {
-  border-radius: 8px;
-  padding: 5px;
-  box-shadow: 2px 2px 4px 4px lightgray;
+  outline: none;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  border: solid 2px black;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.33;
+  letter-spacing: 0.01em;
+  color: black;
+}
+.input::placeholder {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.33;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.226);
+}
+
+.input:focus {
+  border: solid 2px green;
+}
+
+.btn_submite {
+  cursor: pointer;
+  height: 40px;
+
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.33;
+  letter-spacing: 0.01em;
+  color: black;
+}
+
+.errorMessage {
+  color: red;
 }
